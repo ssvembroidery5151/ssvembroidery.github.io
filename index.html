@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TThread - Shree Siddhivinayak Embroidery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TThread</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#polo">Polos</a></li>
+                <li><a href="#crew">Crew Necks</a></li>
+                <li><a href="#shirts">Shirts</a></li>
+                <li><a href="#outerwear">Outerwear</a></li>
+                <li><a href="#bottoms">Trousers</a></li>
+                <li><a href="#cart">Cart (0)</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to TThread by Shree Siddhivinayak Embroidery</h1>
+        <p>Explore our certified, sustainable, and performance-driven apparel collection.</p>
+    </section>
+
+    <section id="polo" class="product-gallery">
+        <h2>Polos</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="pima-polo.jpg" alt="Pima Polo">
+                <h3>Pima Polo (100% Cotton)</h3>
+                <p class="description">260 GSM, Bio Wash, German Tech Knit. Colors: Red Orange, White, Mint Blue, Imperial Blue.</p>
+                <p class="price">₹1330</p>
+                <div class="colors">Red, White, Blue</div>
+                <button onclick="addToCart('Pima Polo', 1330)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="jacquard-polo-men.jpg" alt="Jacquard Polo Sustainable">
+                <h3>Jacquard Polo (Sustainable) Men</h3>
+                <p class="description">240 GSM, 60% Recycled Cotton, Yarn Dyed. Colors: White, Sunrise Yellow, Aqua Blue.</p>
+                <p class="price">₹1245</p>
+                <div class="colors">White, Yellow, Blue</div>
+                <button onclick="addToCart('Jacquard Polo Men', 1245)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="jacquard-polo-women.jpg" alt="Jacquard Polo Women Sustainable">
+                <h3>Jacquard Polo (Sustainable) Women</h3>
+                <p class="description">240 GSM, 60% Recycled Cotton, 5% Lycra. Colors: White, Sand Beige, Aqua Blue.</p>
+                <p class="price">₹1245</p>
+                <div class="colors">White, Beige, Blue</div>
+                <button onclick="addToCart('Jacquard Polo Women', 1245)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="mars200-polo.jpg" alt="Mars 200 Polo">
+                <h3>Mars 200 Polo (Performance)</h3>
+                <p class="description">200 GSM OBT Polyester, UV Protected, Moisture Management. Colors: Purple, Ivory, Slate Grey.</p>
+                <p class="price">₹1210</p>
+                <div class="colors">Purple, Grey, Blue</div>
+                <button onclick="addToCart('Mars 200 Polo', 1210)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="melange-polo.jpg" alt="Melange Edit Polo">
+                <h3>The Melange Edit Polo (Premium Polyester)</h3>
+                <p class="description">200 GSM, Wrinkle-Free, UV Protected. Colors: Pistachio, Onion.</p>
+                <p class="price">₹1225</p>
+                <div class="colors">Green, Pink</div>
+                <button onclick="addToCart('Melange Edit Polo', 1225)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="crew" class="product-gallery">
+        <h2>Crew Necks</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="oversized-tee.jpg" alt="Oversized Tee">
+                <h3>Oversized Tee (100% Cotton)</h3>
+                <p class="description">240 GSM Pima Cotton, French Terry. Colors: Black, Off-White.</p>
+                <p class="price">₹1275</p>
+                <div class="colors">Black, White</div>
+                <button onclick="addToCart('Oversized Tee', 1275)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pima-crew.jpg" alt="Pima Crew Necks">
+                <h3>Pima Crew Necks (100% Cotton)</h3>
+                <p class="description">185 GSM, Long Lasting Colors. Colors: White, Yellow, Red.</p>
+                <p class="price">₹1175</p>
+                <div class="colors">White, Yellow, Red</div>
+                <button onclick="addToCart('Pima Crew Necks', 1175)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="3d-crew.jpg" alt="3D Crew Necks Sustainable">
+                <h3>3D Crew Necks (Sustainable)</h3>
+                <p class="description">190 GSM, 80% Recycled Cotton. Equivalent to 3 T-Shirts + 4 Bottles recycled.</p>
+                <p class="price">₹1125</p>
+                <div class="colors">White, Grey, Blue</div>
+                <button onclick="addToCart('3D Crew Necks', 1125)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="mobilitte-crew.jpg" alt="Mobilitte Crew Necks">
+                <h3>Mobilitte Crew Necks (Performance)</h3>
+                <p class="description">160 GSM OBT Polyester, Wrinkle-Free. Colors: Mint Blue, Orange, Black.</p>
+                <p class="price">₹685</p>
+                <div class="colors">Blue, Orange, Black</div>
+                <button onclick="addToCart('Mobilitte Crew Necks', 685)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="sports-crew.jpg" alt="Sports Crew">
+                <h3>Sports Crew (Performance)</h3>
+                <p class="description">120 GSM OBT Polyester, Back Reflectives. Colors: Yellow, White.</p>
+                <p class="price">₹459</p>
+                <div class="colors">Yellow, White</div>
+                <button onclick="addToCart('Sports Crew', 459)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="shirts" class="product-gallery">
+        <h2>Shirts</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="workday-shirt.jpg" alt="6X Smarter Workday Shirt">
+                <h3>6X Smarter Workday Shirt</h3>
+                <p class="description">Professional shirt-tee hybrid. Colors: White, Sky Blue, Off-White, Grey, Black, Denim Blue.</p>
+                <p class="price">₹1425</p>
+                <div class="colors">White, Blue, Grey</div>
+                <button onclick="addToCart('Workday Shirt', 1425)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="outerwear" class="product-gallery">
+        <h2>Outerwear (Jackets, Zippers, Hoodies)</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="jet-setter.jpg" alt="Jet-Setter Jacket">
+                <h3>Jet-Setter Jacket</h3>
+                <p class="description">Travel-friendly jacket. Colors: Grey, Navy Blue, Olive Green, Teal Blue, Black.</p>
+                <p class="price">₹1550</p>
+                <div class="colors">Grey, Blue, Green</div>
+                <button onclick="addToCart('Jet-Setter Jacket', 1550)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="zipper.jpg" alt="Sustainable 2 in 1 Zipper">
+                <h3>Sustainable 2 in 1 Zipper</h3>
+                <p class="description">300 GSM, 80% Recycled Cotton, Yarn Dyed.</p>
+                <p class="price">₹1400</p>
+                <div class="colors">Varied</div>
+                <button onclick="addToCart('2 in 1 Zipper', 1400)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="hoodie.jpg" alt="Sustainable Classic Hoodie">
+                <h3>Sustainable Classic Hoodie</h3>
+                <p class="description">300 GSM, Recycled Materials, Diamond Quality Yarn.</p>
+                <p class="price">₹1365</p>
+                <div class="colors">Varied</div>
+                <button onclick="addToCart('Classic Hoodie', 1365)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="bottoms" class="product-gallery">
+        <h2>Trousers</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="flexi-trousers.jpg" alt="Flexi-Waist Trousers">
+                <h3>Flexi-Waist Trousers (65-35 Blend)</h3>
+                <p class="description">Comfortable fit, Length 41". Waist: 30-40".</p>
+                <p class="price">₹1450</p>
+                <div class="colors">Varied</div>
+                <button onclick="addToCart('Flexi-Waist Trousers', 1450)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="formal-trousers.jpg" alt="Formal Trousers">
+                <h3>Formal Trousers (100% Polyester)</h3>
+                <p class="description">Professional wear, Length 41". Waist: 30-40".</p>
+                <p class="price">₹1305</p>
+                <div class="colors">Varied</div>
+                <button onclick="addToCart('Formal Trousers', 1305)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="size-guide" class="size-guide">
+        <h2>Size Guide</h2>
+        <p>Click on products for detailed measurements. +/- 1 inch tolerance acceptable.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TThread - Shree Siddhivinayak Embroidery. All rights reserved.</p>
+        <p>Certified: Global Recycled Standard, Sedex, Intertek, Fairtrade.</p>
+        <p>Contact: support@tthread.com | +91 12345 67890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
